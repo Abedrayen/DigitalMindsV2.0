@@ -9,7 +9,7 @@ window.trustMachine = function (test) {
         console.log("%cError : Param must be equal to 2018 :)", "color:#cc0000; font-size:20px");
     } else {
         console.log("%c↓", "color:#fce526; font-size:25px");
-        console.log("%cfile:///C:/Users/hp/Desktop/DM2.0/trusttheballot.html", "color:#cc0000; font-size:20px");
+        console.log("%chttps://digitalminds2024.github.io/DigitalMindsV2.0/trusttheballot.html", "color:#cc0000; font-size:20px");
     }
 }
 window.exMachina= function (test) {
@@ -19,7 +19,7 @@ window.exMachina= function (test) {
         console.log("%cError : Param must be equal to 2018 :)", "color:#cc0000; font-size:20px");
     } else {
         console.log("%c↓", "color:#fce526; font-size:25px");
-        console.log("%cfile:///C:/Users/hp/Desktop/DM2.0/aichallenge.html", "color:#cc0000; font-size:20px");
+        console.log("%chttps://digitalminds2024.github.io/DigitalMindsV2.0/aichallenge.html", "color:#cc0000; font-size:20px");
     }
 }
 window.socialNetwork = function (test) {
@@ -29,7 +29,7 @@ window.socialNetwork = function (test) {
         console.log("%cError : Param must be equal to 2013 :)", "color:#cc0000; font-size:20px");
     } else {
         console.log("%c↓", "color:#fce526; font-size:25px");
-        console.log("%cfile:///C:/Users/hp/Desktop/DM2.0/wolfofwallstreet.html", "color:#cc0000; font-size:20px");
+        console.log("%chttps://digitalminds2024.github.io/DigitalMindsV2.0/wolfofwallstreet.html", "color:#cc0000; font-size:20px");
     }
 }
 hideFile();
