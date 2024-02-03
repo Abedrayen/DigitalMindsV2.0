@@ -57,5 +57,6 @@ function closeChallenge() {
 function confirmChallenge() {
 
     closeChallenge();
+
 }
 
