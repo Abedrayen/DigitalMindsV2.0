@@ -95,8 +95,9 @@ nav a:hover {
 
 .challenge-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 10px;
+    font-family: 'Josefin Sans';
 }
 
 .challenge-description {
@@ -105,9 +106,14 @@ nav a:hover {
     white-space: pre-line;
 }
 .bt{
-    background-color: green;
+    background-color: #e50914;
+    font-family: 'prompt';
+    transition: 0.5s;
 }
-
+button:hover {
+    background-color: #f1f1f1; /* Button hover background color */
+    color: #1a1a1a;
+}
 .expanded-view {
     display: none;
     text-align: center;
@@ -145,7 +151,10 @@ nav a:hover {
     font-weight: bold;
     cursor: pointer;
 }
+p{
+    font-family: 'prompt';
 
+}
 .close:hover {
     color: #fff;
 }
@@ -161,9 +170,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #e86053; /* Button hover background color */
-}
+
 
 @keyframes fadeIn {
     from {
