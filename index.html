@@ -1,92 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Prompt:wght@300&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/dm.png">
-    <link rel="stylesheet" href="Challenge.css">
-    <title>Digital Minds V2.0</title>
+    <title>opening</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container p{
+    color: lightgray;
+    font-weight: lighter;
+    font-family: prompt;
+}
+    </style>
 </head>
-
 <body>
-
-    <header class="header">
-        <a href="index.html">
-            <img src="assets/digitalMinds.png" alt="digitalMinds Logo" class="logo">
-        </a>
-
+    <div class="container" id="container">
+        <p>click Enter to continue</p>
         <nav>
-            <ul>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeIXx4PcPBOc0BQ7LeWZ5Q-NrDx7OzVSWqRjp6sMzJERJrIQQ/viewform"
-                        target="_blank">Submit</a></li>
-                <li><a href="https://discord.gg/RRddSXNa" target="_blank">Discord</a></li>
-                <li><a href="#">Recently Added</a></li>
-            </ul>
+            <img src="assets/N-digital-minds-logo.png" id="Nlogo">
+            <img src="assets/digitalMinds.png" alt="logo" id="digitalMindsLogo">
         </nav>
-    </header>
-
-    <section class="main">
-        <div class="image-container">
-            <div class="challenge">
-                <img src="assets/Blockchain.png" alt="Challenge 1" onclick="showAlert(1)">
-                <div class="challenge-details">
-                    <p class="challenge-title">BlockChain Challenge</p>
-                    <p class="challenge-description">Enter the 'Trust Machine' challenge inspired by the movie. Dive
-                        into the world of blockchain, where trust is coded and conventional norms are challenged.
-                        Unleash your creativity to redefine trust and revolutionize industries. Join the blockchain
-                        evolution – the future of trust is in your hands</p>
-                    <button class="bt" onclick="showAlert(1)">Go to challenge</button>
-                </div>
-            </div>
-            <div class="challenge">
-                <img src="assets/exmachina.jpg" alt="Challenge 2" onclick="showAlert(2)">
-                <div class="challenge-details">
-                    <p class="challenge-title">AI Challenge</p>
-                    <p class="challenge-description"> Step into the realm of artificial intelligence, where innovation
-                        meets ethical dilemmas. Unleash your creativity to push the boundaries of AI, challenge norms,
-                        and shape a future where machines and humanity coexist. </p>
-                    <button class="bt" onclick="showAlert(2)">Go to challenge</button>
-                </div>
-            </div>
-            <div class="challenge">
-                <img src="assets/wows.jpeg" alt="Challenge 3" onclick="showAlert(3)">
-                <div class="challenge-details">
-                    <p class="challenge-title">WebDev Challenge</p>
-                    <p class="challenge-description">Dive into the 'Wolf of Wall Street' E-commerce Challenge,
-                        channeling the spirit of high-stakes ambition and relentless entrepreneurship. Craft a website
-                        that captures the energy of Wall Street's wolfish pursuits within the e-commerce landscape.
-                        Unleash your creativity to design an electrifying platform, where products become opportunities.</p>
-                    <button class="bt" onclick="showAlert(3)">Go to challenge</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <div class="expanded-view" id="expandedView">
-        <p id="challengeInfo">Challenge Information Goes Here</p>
-        <button onclick="closeChallenge()">Go Back</button>
-        <button onclick="confirmChallenge()">Confirm</button>
+        <a href="home.html">
+            <button   id="continueBtn">Continue</button>
+        </a>
+       
     </div>
-
-    <footer class="footer">
-        <p>&copy; 2024 Digital Minds V2.0. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <audio src="assets/NetflixAudio.mp3" id="netflixAudio"></audio>
 </body>
+<script>
+    var netflixAudio = document.getElementById('netflixAudio');
+    var digitalMindsLogo = document.getElementById('digitalMindsLogo');
+    var Nlogo = document.getElementById('Nlogo');
+    var continueBtn = document.getElementById('continueBtn');
+    var AudioPlayed = false;
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeChallenge()">&times;</span>
-        <p>Check the page's console to see the challenge</p>
-        <button onclick="confirmChallenge()">Confirm</button>
-    </div>
-</div>
-
+    window.addEventListener('keydown' , function(event){
+        if(event.keyCode==13 && AudioPlayed==false){
+            netflixAudio.play();
+            digitalMindsLogo.classList.add('animation2');
+            Nlogo.classList.add('animation1');
+            continueBtn.classList.add('showBtn');
+            AudioPlayed=true;
+        }
+    })
+    
+    continueBtn.addEventListener('click' , function(){
+        container.style.display = "none";
+    })
+</script>
 </html>
