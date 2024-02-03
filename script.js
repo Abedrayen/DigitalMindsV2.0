@@ -15,8 +15,8 @@ window.trustMachine = function (test) {
 window.exMachina= function (test) {
     if (test == null) {
         console.log("%cError : missing argument : maybe the movies's release year!! :)", "color:#cc0000; font-size:20px");
-    } else if (test != "2018") {
-        console.log("%cError : Param must be equal to 2018 :)", "color:#cc0000; font-size:20px");
+    } else if (test != "2014") {
+        console.log("%cError : Param must be equal to 2014 :)", "color:#cc0000; font-size:20px");
     } else {
         console.log("%c↓", "color:#fce526; font-size:25px");
         console.log("%chttps://digitalminds2024.github.io/DigitalMindsV2.0/aichallenge.html", "color:#cc0000; font-size:20px");
