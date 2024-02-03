@@ -22,7 +22,7 @@ window.exMachina= function (test) {
         console.log("%chttps://digitalminds2024.github.io/DigitalMindsV2.0/aichallenge.html", "color:#cc0000; font-size:20px");
     }
 }
-window.socialNetwork = function (test) {
+window.wolfOfWallStreet = function (test) {
     if (test == null) {
         console.log("%cError : missing argument : maybe the  movies's release year!! :)", "color:#cc0000; font-size:20px");
     } else if (test != "2013") {
@@ -44,7 +44,7 @@ function showAlert(a) {
     } else if (a === 2) {
         b = "exMachina()";
     }else  {
-        b = "socialNetwork()";
+        b = "wolfOfWallStreet()";
     }
 
     console.log('%cExecute ' + b + ' to reveal it.', 'font-size: 20px; color: green; font-weight: bold;');
